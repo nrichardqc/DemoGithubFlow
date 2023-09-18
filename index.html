@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Formulaire avec Bootstrap</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Formulaire avec Bootstrap</h1>
+  </header>
+
+  <main>
+    <h2>Exercice</h2>
+    <form method="GET" action="#">
+      <div>
+        <labelfor="nom">Nom: </label>
+        <input type="text" name="nom" id="nom" required="required" />
+      </div>
+
+      <div>
+        <labelfor="courriel">Courriel: </label>
+        <input type="email" name="courriel" id="courriel" />
+      </div>
+
+      <div>
+        <labelfor="ville">Ville: </label>
+        <input type="text" name="ville" id="ville" />
+        <div class="form-text">Soyez le plus précis possible.</div>
+      </div>
+
+      <div>
+        <label for="lst_province" class="form-label">Province ou territoire: </label>
+        <select name="lst_province" id="lst_province">
+          <option disabled="disabled" selected="selected" value="nil">--- Votre choix ---</option>
+          <optgroup label="Ouest">
+            <option value="cb">Colombie-Britannique</option>
+            <option value="al">Alberta</option>
+            <option value="sa">Saskatchewan</option>
+            <option value="ma">Manitoba</option>
+          </optgroup>
+          <optgroup label="Centre">
+            <option value="on">Ontario</option>
+            <option value="qc">Québec</option>
+          </optgroup>
+          <optgroup label="Est">
+            <option value="nb">Nouveau-Brunswick</option>
+            <option value="ne">Nouvelle-Écosse</option>
+            <option value="ipe">Île-du-Prince-Edouard</option>
+            <option value="tn">Terre-Neuve et Labarador</option>
+          </optgroup>
+          <optgroup label="Nord">
+            <option value="ma">Territoires du Nord-Ouest</option>
+            <option value="nu">Nunavut</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Statut</legend>
+        <div>
+          <input type="radio" name="statut" id="statut_marie" value="m" checked="checked" />
+          <label for="statut_marie">Marié(e)</label>
+        </div>
+        <div>
+          <input type="radio" name="statut" id="statut_celibataire" value="c" />
+          <label for="statut_celibataire">Célibataire</label>
+        </div>
+        <div>
+          <input type="radio" name="statut" id="statut_autre" value="a" />
+          <label for="statut_autre">Autre</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <input type="submit" class="btn btn-primary"   value="Soumettre" />
+        <input type="reset"  class="btn btn-secondary" value="Réinitialiser"/>
+      </div>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
